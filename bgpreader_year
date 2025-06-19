@@ -1,0 +1,28 @@
+#!/bin/bash
+
+# Starting UNIX timestamp (e.g., 1st Jan 2017 at 00:00:00 UTC)
+start_timestamp=1483228800
+
+# Output file
+output_file="bgpreader_commands_year.txt"
+
+# Clear the output file if it exists
+> "$output_file"
+
+# Number of days in the year (365 for non-leap years, 366 for leap years)
+days_in_year=365
+
+# Loop through all days of the year
+for day in $(seq 0 $((days_in_year - 1))); do
+  # Calculate the timestamp for the current day
+  current_timestamp=$((start_timestamp + day * 86400))
+
+  # Generate the command
+  command="bgpreader -t ribs -w ${current_timestamp},${current_timestamp} -A _32787_ >> shared_dir/raw_as32787_$(date -u -d @$current_timestamp +%d_%b_%Y).txt"
+
+  # Append the command to the output file
+  echo "$command" >> "$output_file"
+done
+
+echo "Commands for the year have been written to $output_file."
+

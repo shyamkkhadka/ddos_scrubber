@@ -1,0 +1,7 @@
+01 Jan 2023
+Number of IPs protected by the five scrubber's protected prefixes is: 755 and IPs saved in openintel_tranco_scrubber_covered_ip_01_jan_2023.txt
+1213 number of domains are protected in 01 jan 2023.
+
+01 Jan 2024
+Number of IPs protected by the five scrubber's protected prefixes is: 834 and IPs saved in openintel_tranco_scrubber_covered_ip_01_jan_2024.txt
+1125 number of domains are protected in 01 jan 2024. 

@@ -1,0 +1,12 @@
+bgpreader -t ribs -p ris -w 1672531200,1672531200 >> /data/shared_dir/ddos_scrubber/raw_01_jan_2023.txt && \
+bgpreader -t ribs -p ris -w 1675209600,1675209600 >> /data/shared_dir/ddos_scrubber/raw_01_feb_2023.txt && \
+bgpreader -t ribs -p ris -w 1677628800,1677628800 >> /data/shared_dir/ddos_scrubber/raw_01_mar_2023.txt && \
+bgpreader -t ribs -p ris -w 1680307200,1680307200 >> /data/shared_dir/ddos_scrubber/raw_01_apr_2023.txt && \
+bgpreader -t ribs -p ris -w 1682899200,1682899200 >> /data/shared_dir/ddos_scrubber/raw_01_may_2023.txt && \
+bgpreader -t ribs -p ris -w 1685577600,1685577600 >> /data/shared_dir/ddos_scrubber/raw_01_jun_2023.txt && \
+bgpreader -t ribs -p ris -w 1688169600,1688169600 >> /data/shared_dir/ddos_scrubber/raw_01_jul_2023.txt && \
+bgpreader -t ribs -p ris -w 1690848000,1690848000 >> /data/shared_dir/ddos_scrubber/raw_01_aug_2023.txt && \
+bgpreader -t ribs -p ris -w 1693526400,1693526400 >> /data/shared_dir/ddos_scrubber/raw_01_sep_2023.txt && \
+bgpreader -t ribs -p ris -w 1696118400,1696118400 >> /data/shared_dir/ddos_scrubber/raw_01_oct_2023.txt && \
+bgpreader -t ribs -p ris -w 1698796800,1698796800 >> /data/shared_dir/ddos_scrubber/raw_01_nov_2023.txt && \
+bgpreader -t ribs -p ris -w 1701388800,1701388800 >> /data/shared_dir/ddos_scrubber/raw_01_dec_2023.txt && \

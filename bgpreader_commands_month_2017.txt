@@ -1,0 +1,12 @@
+bgpreader -t ribs -p ris -w 1483228800,1483228800 -A _32787_ >> /data/shared_dir/ddos_scrubber/as32787/raw_as32787_01_jan_2017.txt && \
+bgpreader -t ribs -p ris -w 1485907200,1485907200 -A _32787_ >> /data/shared_dir/ddos_scrubber/as32787/raw_as32787_01_feb_2017.txt && \
+bgpreader -t ribs -p ris -w 1488326400,1488326400 -A _32787_ >> /data/shared_dir/ddos_scrubber/as32787/raw_as32787_01_mar_2017.txt && \
+bgpreader -t ribs -p ris -w 1491004800,1491004800 -A _32787_ >> /data/shared_dir/ddos_scrubber/as32787/raw_as32787_01_apr_2017.txt && \
+bgpreader -t ribs -p ris -w 1493596800,1493596800 -A _32787_ >> /data/shared_dir/ddos_scrubber/as32787/raw_as32787_01_may_2017.txt && \
+bgpreader -t ribs -p ris -w 1496275200,1496275200 -A _32787_ >> /data/shared_dir/ddos_scrubber/as32787/raw_as32787_01_jun_2017.txt && \
+bgpreader -t ribs -p ris -w 1498867200,1498867200 -A _32787_ >> /data/shared_dir/ddos_scrubber/as32787/raw_as32787_01_jul_2017.txt && \
+bgpreader -t ribs -p ris -w 1501545600,1501545600 -A _32787_ >> /data/shared_dir/ddos_scrubber/as32787/raw_as32787_01_aug_2017.txt && \
+bgpreader -t ribs -p ris -w 1504224000,1504224000 -A _32787_ >> /data/shared_dir/ddos_scrubber/as32787/raw_as32787_01_sep_2017.txt && \
+bgpreader -t ribs -p ris -w 1506816000,1506816000 -A _32787_ >> /data/shared_dir/ddos_scrubber/as32787/raw_as32787_01_oct_2017.txt && \
+bgpreader -t ribs -p ris -w 1509494400,1509494400 -A _32787_ >> /data/shared_dir/ddos_scrubber/as32787/raw_as32787_01_nov_2017.txt && \
+bgpreader -t ribs -p ris -w 1512086400,1512086400 -A _32787_ >> /data/shared_dir/ddos_scrubber/as32787/raw_as32787_01_dec_2017.txt && \

@@ -1,0 +1,12 @@
+bgpreader -t ribs -p ris -w 1704067200,1704067200 >> ~/Desktop/raw_01_jan_2024.txt && \
+bgpreader -t ribs -p ris -w 1706745600,1706745600 >> ~/Desktop/raw_01_feb_2024.txt && \
+bgpreader -t ribs -p ris -w 1709251200,1709251200 >> ~/Desktop/raw_01_mar_2024.txt && \
+bgpreader -t ribs -p ris -w 1711929600,1711929600 >> ~/Desktop/raw_01_apr_2024.txt && \
+bgpreader -t ribs -p ris -w 1714521600,1714521600 >> ~/Desktop/raw_01_may_2024.txt && \
+bgpreader -t ribs -p ris -w 1717200000,1717200000 >> ~/Desktop/raw_01_jun_2024.txt && \
+bgpreader -t ribs -p ris -w 1719792000,1719792000 >> ~/Desktop/raw_01_jul_2024.txt && \
+bgpreader -t ribs -p ris -w 1722470400,1722470400 >> ~/Desktop/raw_01_aug_2024.txt && \
+bgpreader -t ribs -p ris -w 1725148800,1725148800 >> ~/Desktop/raw_01_sep_2024.txt && \
+bgpreader -t ribs -p ris -w 1727740800,1727740800 >> ~/Desktop/raw_01_oct_2024.txt && \
+bgpreader -t ribs -p ris -w 1730419200,1730419200 >> ~/Desktop/raw_01_nov_2024.txt && \
+bgpreader -t ribs -p ris -w 1733011200,1733011200 >> ~/Desktop/raw_01_dec_2024.txt && \

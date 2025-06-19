@@ -1,0 +1,7 @@
+bgpreader -t ribs -w 1485907200,1485907200 -A _3287_ >> shared_dir/raw_as32787_01_Feb_2017.txt
+bgpreader -t ribs -w 1485993600,1485993600 -A _3287_ >> shared_dir/raw_as32787_02_Feb_2017.txt
+bgpreader -t ribs -w 1486080000,1486080000 -A _3287_ >> shared_dir/raw_as32787_03_Feb_2017.txt
+bgpreader -t ribs -w 1486166400,1486166400 -A _3287_ >> shared_dir/raw_as32787_04_Feb_2017.txt
+bgpreader -t ribs -w 1486252800,1486252800 -A _3287_ >> shared_dir/raw_as32787_05_Feb_2017.txt
+bgpreader -t ribs -w 1486339200,1486339200 -A _3287_ >> shared_dir/raw_as32787_06_Feb_2017.txt
+bgpreader -t ribs -w 1486425600,1486425600 -A _3287_ >> shared_dir/raw_as32787_07_Feb_2017.txt

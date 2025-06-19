@@ -1,0 +1,35 @@
+#!/bin/bash
+
+# Specify the year
+year=2020
+scrubber=32787
+
+# Output file
+output_file="bgpreader_commands_month_${year}.txt"
+
+# Clear the output file if it exists
+> "$output_file"
+
+# Loop through all months (1 to 12)
+for month in {1..12}; do
+  # Generate the date string for the first day of the month at 00:00:00
+  date_string="$year-$(printf "%02d" $month)-01 00:00:00"
+
+  # Convert the date string to UNIX timestamp
+  timestamp=$(date -u -d "$date_string" +%s)
+
+  # Get the month in lowercase
+  lowercase_month=$(date -u -d "$date_string" +%b | awk '{print tolower($0)}')
+
+  # Generate the command
+  #command="bgpreader -t ribs -p ris -w ${timestamp},${timestamp} -A _${scrubber}_ >> /data/shared_dir/ddos_scrubber/as${scrubber}/raw_as${scrubber}_$(date -u -d @$timestamp +%d)_${lowercase_month}_$(date -u -d @$timestamp +%Y).txt && \\"
+  command="bgpreader -t ribs -p ris -w ${timestamp},${timestamp} >> /data/shared_dir/ddos_scrubber/raw_$(date -u -d @$timestamp +%d)_${lowercase_month}_$(date -u -d @$timestamp +%Y).txt && \\"
+ 
+  #routeviews -c route-views.linx -c route-views.amsix  -c routeviews.eqix  -c route-views.sydney -c route-views.saopaulo -c route-views.sg -c route-views.wide -c route-views.napafrica	 -c route-views2 -c route-views3 -c route-views4 -c route-views5 -c route-views6 -c route-views7 -c route-views8 -w ${timestamp},${timestamp} -A _${scrubber}_ >> ~/Desktop/as${scrubber}/raw_as${scrubber}_$(date -u -d @$timestamp +%d)_${lowercase_month}_$(date -u -d @$timestamp +%Y).txt && \\"
+
+  # Append the command to the output file
+  echo "$command" >> "$output_file"
+done
+
+echo "Commands for the year have been written to $output_file"
+

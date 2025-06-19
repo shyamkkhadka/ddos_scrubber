@@ -1,0 +1,44 @@
+# Generates bgpreader command for a month in every 7 days of intervals.
+#!/bin/bash
+
+# ASN
+asn="198949"
+
+# Target year and month (user can modify these)
+target_year="2024"
+target_month="09"  # Change this safely
+
+# Ensure month is numeric (strip any leading zero safely)
+numeric_month=$(echo "$target_month" | sed 's/^0*//')
+if [ -z "$numeric_month" ]; then numeric_month=0; fi
+
+# Compute next month and year safely
+next_month=$((numeric_month + 1))
+next_year="$target_year"
+if [ "$next_month" -eq 13 ]; then
+  next_month=1
+  next_year=$((target_year + 1))
+fi
+
+# Format next month as 2-digit
+next_month_padded=$(printf "%02d" "$next_month")
+
+# Determine days in current month
+days_in_month=$(date -d "$next_year-$next_month_padded-01 -1 day" +%d)
+
+# Output file for commands
+command_output_file="bgpreader_commands_${target_year}-${target_month}.txt"
+> "$command_output_file"
+
+# Start from day 1, step by 7
+day=1
+while [ "$day" -le "$days_in_month" ]; do
+  date_str=$(printf "%04d-%02d-%02d" "$target_year" "$numeric_month" "$day")
+  if ts=$(date -u -d "$date_str" +%s 2>/dev/null); then
+    output_file="raw_as${asn}_${date_str}.txt"
+    echo "bgpreader -t ribs -p ris -w ${ts},${ts} -A _${asn}_ >> /data/shared_dir/scrubber_activation/${output_file}" >> "$command_output_file"
+  fi
+  day=$((day + 7))
+done
+
+echo "BGPReader commands for ${target_year}-${target_month} written to $command_output_file."
