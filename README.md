@@ -7,3 +7,4 @@ Paper: A first look at the adoption of BGP-based DDoS scrubbing services: A 5-ye
 - protected-ases-analysis.ipynb: Maps protected ASes to their registered countries and the top finance and insurance companies of the top 8 countries.
 - protected-ases-analysis.py: Determines total protected ASes for each scrubber after combining three patterns.
 - protected-prefixes-analysis.py: Determines total protected prefixes for each scrubber after combining three patterns.
+- find-total-ases-prefixes.py: Determines the total prefixes and ases as seen in the BGP data monthly.
