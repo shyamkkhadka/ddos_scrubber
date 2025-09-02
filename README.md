@@ -5,3 +5,5 @@ Paper: A first look at the adoption of BGP-based DDoS scrubbing services: A 5-ye
 - openintel-tranco-2024-100k.ipynb: Checks how many protected prefixes host Tranco 1M list of domains.
 - openintel-alexa-2024-100k.ipynb: Checks how many protected prefixes host Alexa 1M list of domains.
 - protected-ases-analysis.ipynb: Maps protected ASes to their registered countries and the top finance and insurance companies of the top 8 countries.
+- protected-ases-analysis.py: Determines total protected ASes for each scrubber after combining three patterns.
+- protected-prefixes-analysis.py: Determines total protected prefixes for each scrubber after combining three patterns.
